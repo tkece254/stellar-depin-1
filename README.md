@@ -2,6 +2,9 @@
 
 decentralized gpu rental. pay in xlm. no middlemen. simple.
 
+##Live link
+https://carrot-khaki.vercel.app/
+
 ## what is this
 
 rent gpus or make money from your idle hardware. built on stellar (soroban smart contracts).
