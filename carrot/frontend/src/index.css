@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen bg-white text-gray-900;
+}
+
+/* carrot logo effects */
+.carrot-logo {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 4px rgba(249, 115, 22, 0.3));
+}
+
+.carrot-logo:hover {
+  filter: drop-shadow(0 0 12px rgba(249, 115, 22, 0.6));
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* carrot outline font */
+.carrot-title {
+  font-family: 'Bungee Outline', cursive;
+  color: #f97316;
+  letter-spacing: 2px;
+}
+
+/* alternative outline effect if font doesn't load */
+.carrot-title-outline {
+  -webkit-text-stroke: 2px #f97316;
+  color: transparent;
+  font-weight: bold;
+}

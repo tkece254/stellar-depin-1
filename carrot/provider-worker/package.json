@@ -1,0 +1,19 @@
+{
+  "name": "carrot-gpu-worker",
+  "version": "1.0.0",
+  "description": "GPU worker server for Carrot providers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build-docker": "cd docker-image && docker build -t carrot-gpu-worker .",
+    "test-docker": "docker run --rm carrot-gpu-worker python3 /app/tasks/simple_compute.py 'test' 0"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "form-data": "^4.0.5"
+  }
+}
